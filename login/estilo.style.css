@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #121f2f;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  background-color: #2b324e;
+  width: 250px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#imagem {
+  background: #2b324e url(imagemnv.jpg);
+  background-size: cover;
+  height: 50%;
+}
+
+#container-link {
+  margin-right: 20px;
+}
+
+a {
+  color: #666f98;
+  font-size: 10px;
+}
+
+#container-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px;
+}
+
+.container-homeinfo {
+  color: #fefefe;
+}
+
+.container-homeinfo > a {
+  text-decoration: none;
+}
+
+.container-homeinfo > a:hover {
+  text-decoration: underline #f9b073;
+}
+
+#container-facalogin {
+  margin-top: 10px;
+}
+
+#container-formulario {
+  margin-top: 12px;
+}
+
+#container-facalogin > h2 {
+  font-size: 18px;
+}
+
+#container-facalogin > p {
+  font-size: 10px;
+}
+
+#container-facalogin---cliqueaqui:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container-input {
+  width: 209px;
+  height: 35px;
+  background-color: #404668;
+  outline: none;
+  border: none;
+  color: #fefefe;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.input-email {
+  margin-bottom: 2px;
+  border-left: 2px solid #f9b073;
+}
+
+#formulario-botao {
+  width: 100px;
+  height: 30px;
+  margin-top: 14px;
+  outline: none;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#formulario-botao:hover {
+  background-color: #f9b073;
+  box-shadow: 0px 1px 7px 0px #f9b073;
+}

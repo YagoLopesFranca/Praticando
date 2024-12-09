@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo</title>
+    <style>
+        div {
+            background-color: lightgrey;
+            color: white;
+            height: 200px;
+            width: 200px;
+            padding: 5px 5px 10px 5px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        div:hover#d1 {
+            background-color: rgb(92, 92, 170);
+        }
+
+        div#d1 > span {
+            color: black;
+            font-weight: bold;
+            display: none;
+        }
+
+        div:hover#d1 > span {
+            display: block;
+            color: orangered;
+            text-align: center;
+            background-color: rgb(253, 252, 252);
+            height: 20px;
+        }
+
+        div#d1 > a {
+            color: brown;
+        }
+
+        div:hover#d2 {
+            background-color: yellow;
+        }
+
+        div:hover#d3 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">azul</div>
+    <div id="d2">amarelo</div>
+    <div id="d3">roxo</div>
+
+    
+</body>
+</html>
