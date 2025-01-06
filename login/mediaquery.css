@@ -1,0 +1,69 @@
+@media (min-width: 768px) and (max-width: 992px) {
+  #container-flex {
+    /* padding: 50px; */
+    position: absolute;
+    left: 9%;
+    bottom: 15%;
+  }
+
+  section#container {
+    width: 80vw;
+    height: 430px;
+  }
+
+  #imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-position: center center;
+  }
+
+  .home:nth-child(1) {
+    position: absolute;
+    top: -80px;
+    margin-bottom: 10px;
+  }
+
+  .info:nth-child(2) {
+    position: absolute;
+    top: -80px;
+    transform: translateX(50px);
+  }
+
+  .container-facalogin--espacamento {
+    padding-bottom: 10px;
+  }
+
+  .container-facalogin--espacamento > h2 {
+    padding-bottom: 5px;
+  }
+
+  .container-formulario {
+    float: left;
+  }
+
+  .input-email {
+    height: 40px;
+  }
+
+  .input-radio {
+    padding: 4px 0;
+  }
+
+  .redessociais {
+    display: block;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    padding-top: 25px;
+    color: #666f98;
+  }
+
+  .redessociais > p {
+    font-size: 8px;
+  }
+
+  .redessociais-icones {
+    width: 14px;
+  }
+}

@@ -19,7 +19,7 @@ main {
   height: 100vh;
 }
 
-.container {
+#container {
   background-color: #2b324e;
   width: 250px;
   height: 500px;
@@ -38,7 +38,7 @@ main {
   height: 50%;
 }
 
-#container-link {
+.container-link {
   margin-right: 20px;
 }
 
@@ -50,7 +50,8 @@ a {
 #container-flex {
   display: flex;
   flex-flow: column nowrap;
-  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .container-homeinfo {
@@ -63,6 +64,7 @@ a {
 
 .container-homeinfo > a:hover {
   text-decoration: underline #f9b073;
+  color: #fefefe;
 }
 
 #container-facalogin {
@@ -77,13 +79,14 @@ a {
   font-size: 18px;
 }
 
-#container-facalogin > p {
-  font-size: 10px;
+p {
+  font-size: 9px;
 }
 
 #container-facalogin---cliqueaqui:hover {
-  text-decoration: underline;
+  text-decoration: underline #f9b073;
   cursor: pointer;
+  color: #e4e4e7;
 }
 
 .container-input {
@@ -105,6 +108,21 @@ input::placeholder {
 .input-email {
   margin-bottom: 2px;
   border-left: 2px solid #f9b073;
+  height: 30px;
+}
+
+.input-radio {
+  font-size: 8px;
+  margin-top: 5px;
+}
+
+#grasen {
+  width: 10px;
+}
+
+input[type="radio"] {
+  vertical-align: middle; /* Alinha o botão de rádio ao meio */
+  margin-right: 4px; /* Espaço entre o botão e o texto */
 }
 
 #formulario-botao {
@@ -120,4 +138,8 @@ input::placeholder {
 #formulario-botao:hover {
   background-color: #f9b073;
   box-shadow: 0px 1px 7px 0px #f9b073;
+}
+
+.redessociais {
+  display: none;
 }

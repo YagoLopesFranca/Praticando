@@ -5,35 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina de Login</title>
     <link rel="stylesheet" href="estilo.style.css" />
-    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="mediaquery.css" />
   </head>
   <body>
     <main>
-      <section class="container">
+      <section id="container">
         <div id="imagem">
           <!-- <img src="" alt="imagem sol nascente" /> -->
         </div>
 
         <div id="container-flex">
           <div class="container-homeinfo">
-            <a id="container-link" href="#">Home</a>
-            <a id="container-link" href="#">Informaçôes</a>
+            <a class="container-link home" href="#">Home</a>
+            <a class="container-link info" href="#">Informaçôes</a>
 
-          <div id="container-facalogin">
-            <h2>Faça Login</h2>
-            <p>Nao tem conta? <a id="container-facalogin---cliqueaqui">Clique aqui!</a></p>
+            <div id="container-facalogin ">
+              <div class="container-facalogin--espacamento">
+                <h2>Faça Login!</h2>
+                <p>
+                  Nao tem conta?
+                  <a id="container-facalogin---cliqueaqui">Clique aqui!</a>
+                </p>
+              </div>
 
-            <div id="container-formulario">
+              <div id="container-formulario">
+                <form action="" method="post">
+                  <label for="email"></label>
+                  <input
+                    class="container-input input-email"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="E-mail"
+                  />
+                  <br />
 
-              <form action="" method="post"> 
-              <label for="email"></label>
-              <input class="container-input input-email" type="email" name="email" id="email" required placeholder="E-mail" />
-              
-              <input class="container-input" type="password" name="senha" id="senha" required placeholder="Senha" />
+                  <input
+                    class="container-input"
+                    type="password"
+                    name="senha"
+                    id="senha"
+                    required
+                    placeholder="Senha"
+                  />
+                  <br />
 
-              <input id="formulario-botao" type="button" value="Enviar" />
-            </form>
+                  <div class="input-radio">
+                    <input type="radio" name="grasen1" id="grasen" />
+                    <label for="grasen1">Lembrar senha</label>
+                  </div>
 
+                  <input id="formulario-botao" type="button" value="Enviar" />
+                </form>
+              </div>
+            </div>
+            <div class="redessociais">
+              <p>Nossas Redes sociais</p>
+              <img
+                class="redessociais-icones"
+                src="facebook.png"
+                alt="Imagem Facebook"
+              />
+              <img
+                class="redessociais-icones"
+                src="twitter.png"
+                alt="Imagem Twitter"
+              />
             </div>
           </div>
         </div>
